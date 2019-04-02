@@ -15,6 +15,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(':lesson')
-    implementation project(':base')
+    implementation project(':07_kotlin_lesson')
+    implementation project(':07_kotlin_base')
 }

@@ -11,5 +11,5 @@ android {
 }
 
 dependencies {
-    implementation project(':base')
+    implementation project(':07_kotlin_base')
 }
