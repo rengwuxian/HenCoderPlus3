@@ -1,0 +1,22 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 24
+        targetSdkVersion 28
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api 'androidx.appcompat:appcompat:1.0.0-beta01'
+
+    api "com.google.code.gson:gson:2.8.5"
+    api 'com.squareup.okhttp3:okhttp:3.9.0'
+    api 'androidx.recyclerview:recyclerview:1.0.0'
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}

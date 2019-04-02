@@ -1,0 +1,10 @@
+<resources>
+    <style name="LessonTheme" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="colorButtonNormal">@android:color/white</item>
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+</resources>
