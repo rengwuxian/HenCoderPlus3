@@ -8,4 +8,6 @@ include ':07_kotlin_lesson',
         ':13_layout',
         ':14_touch',
         ':15_scalableimageview',
-        ':17_constraintlayout'
+        ':17_constraintlayout',
+        ':18_motionlayout',
+        ':18_motionlayout_example'

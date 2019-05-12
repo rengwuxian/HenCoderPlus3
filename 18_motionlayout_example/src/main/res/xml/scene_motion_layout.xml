@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+            app:duration="1000"
+            app:constraintSetStart="@id/start"
+            app:constraintSetEnd="@id/end">
+
+        <OnClick
+                app:targetId="@+id/fab_favourite"
+                app:clickAction="jumpToEnd"/>
+
+        <OnSwipe
+                app:dragDirection="dragDown"
+                app:touchRegionId="@id/image_film_cover"
+                app:touchAnchorSide="bottom"/>
+
+        <KeyFrameSet>
+            <KeyPosition app:motionTarget="@id/background"
+                         app:framePosition="50"
+                         app:percentHeight="0"
+                         app:keyPositionType="deltaRelative"
+                         app:percentY="0"/>
+
+
+
+            <KeyAttribute
+                    app:framePosition="0"
+                    app:motionTarget="@id/image_film_cover"
+                    android:elevation="12dp"/>
+
+            <KeyAttribute
+                    app:framePosition="100"
+                    app:motionTarget="@id/image_film_cover"
+                    android:elevation="0dp"/>
+
+
+            <KeyAttribute
+                    app:framePosition="50"
+                    app:motionTarget="@id/image_film_cover"
+                    android:rotationX="30"/>
+
+
+            <KeyPosition
+                    app:framePosition="50"
+                    app:motionTarget="@id/image_film_cover"
+                    app:keyPositionType="parentRelative"
+                    app:percentX="0.5"
+                    app:percentY="0.5"
+                    app:percentWidth="0"
+                    app:percentHeight="0"/>
+
+            <KeyCycle
+                    android:rotation="0"
+                    app:motionTarget="@id/fab_favourite"
+                    app:wavePeriod="0"
+                    app:framePosition="0"
+                    app:waveShape="sin"/>
+
+            <KeyCycle
+                    android:rotation="180"
+                    app:motionTarget="@id/fab_favourite"
+                    app:wavePeriod="3"
+                    app:framePosition="50"
+                    app:waveShape="sin"/>
+
+            <KeyCycle
+                    android:rotation="0"
+                    app:motionTarget="@id/fab_favourite"
+                    app:wavePeriod="0"
+                    app:framePosition="100"
+                    app:waveShape="sin"/>
+
+
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+                android:id="@+id/fab_favourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintStart_toStartOf="@id/background"
+                app:layout_constraintEnd_toEndOf="@id/background"
+                app:layout_constraintBottom_toBottomOf="@id/background"
+                app:layout_constraintTop_toBottomOf="@id/background"
+                app:pathMotionArc="startVertical"
+                app:fabSize="mini"/>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+                android:id="@+id/image_film_cover"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <Constraint
+                android:id="@+id/fab_favourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:fabSize="mini"/>
+
+        <Constraint
+                android:id="@+id/background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+    </ConstraintSet>
+</MotionScene>
