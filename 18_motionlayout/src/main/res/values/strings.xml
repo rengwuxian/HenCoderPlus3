@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Transition Framework</string>
+
+    <string name="film_title">黑客帝国 The Matrix (1999)
+        \n类型: 动作 / 科幻
+        \n语言: 英语
+        \n上映日期: 1999-03-31(美国)
+        \n片长: 136分钟</string>
+    <string name="file_description_title">电影简介</string>
+
+    <string name="film_description">不久的将来，网络黑客尼奥（基奴李维斯 饰）对这个看似正常的现实世界产生了怀疑。他结识了黑客崔妮蒂（凯莉·安·摩丝 饰），并见到了黑客组织的首领墨菲斯（劳伦斯·菲什伯恩 饰）。墨菲斯告诉他，现实世界其实是由一个名叫“母体”的计算机人工智能系统控制，人们就像他们饲养的动物，没有自由和思想，而尼奥就是能够拯救人类的救世主。
+　　\n可是，救赎之路从来都不会一帆风顺，到底哪里才是真实的世界？如何才能打败那些超人一样的特勤？尼奥是不是人类的希望？这是黑客的帝国，程序和代码欢迎大家的到来。</string>
+</resources>

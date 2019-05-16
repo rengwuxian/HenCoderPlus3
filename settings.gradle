@@ -1,1 +1,14 @@
-include ':07_kotlin_lesson', ':07_kotlin_app', ':07_kotlin_base', ':09_drawing', ':10_text_and_transformation', ':11_animation', ':12_bitmap_drawable', ':13_layout', ':14_touch', ':15_scalableimageview', ':16_multi_touch'
+include ':07_kotlin_lesson',
+        ':07_kotlin_app',
+        ':07_kotlin_base',
+        ':09_drawing',
+        ':10_text_and_transformation',
+        ':11_animation',
+        ':12_bitmap_drawable',
+        ':13_layout',
+        ':14_touch',
+        ':15_scalableimageview',
+        ':16_multi_touch',
+        ':17_constraintlayout',
+        ':18_motionlayout',
+        ':18_motionlayout_example'

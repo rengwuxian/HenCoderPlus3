@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Linear">
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+
+        <attr name="anchor" format="reference"/>
+
+        <attr name="gravity" format="enum">
+            <enum name="start" value="0"/>
+            <enum name="end" value="1"/>
+            <enum name="top" value="0"/>
+            <enum name="bottom" value="1"/>
+        </attr>
+
+        <attr name="reverse" format="boolean"/>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="FlowActivity">
+        <attr name="flow_maxElementsWrap" format="integer"/>
+        <attr name="flow_horizontalGap" format="dimension"/>
+        <attr name="flow_verticalGap" format="dimension"/>
+    </declare-styleable>
+</resources>
