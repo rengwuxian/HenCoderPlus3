@@ -1,4 +1,4 @@
-package com.hencoder.a16_multi_touch;
+package com.hencoder.a16_multi_touch.view;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -9,6 +9,8 @@ import android.view.MotionEvent;
 import android.view.View;
 
 import androidx.annotation.Nullable;
+
+import com.hencoder.a16_multi_touch.Utils;
 
 public class MultiTouchView1 extends View {
     private static final float IMAGE_WIDTH = Utils.dpToPixel(200);
