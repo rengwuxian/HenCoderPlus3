@@ -1,4 +1,4 @@
-include ':07_kotlin_lesson', ':19_touch_viewgroup', ':20_drag_nestedscroll', ':21_thread_synchronization', ':22_thread_interaction',
+include ':07_kotlin_lesson', ':19_touch_viewgroup', ':20_drag_nestedscroll', ':21_thread_synchronization', ':22_thread_interaction', ':23_rxjava',
         ':07_kotlin_app',
         ':07_kotlin_base',
         ':09_drawing',
