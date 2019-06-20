@@ -29,5 +29,5 @@ task clean(type: Delete) {
 }
 
 ext {
-    fullBuild = true
+    fullBuild = false
 }
